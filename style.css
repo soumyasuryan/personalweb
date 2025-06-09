@@ -1,0 +1,129 @@
+    * {
+        font-family: "Playfair Display", serif;
+
+    }
+
+    .mainpage {
+        background-image: url("im1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 950px;
+        width: 100%;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding-right: 20px;
+        color: white;
+
+    }
+
+    nav ul {
+        float: right;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(96, 96, 96);
+        border-radius: 10px;
+        margin-top: 25px;
+        margin-right: 20px;
+        padding: 10px;
+        padding-left: 25px;
+    }
+
+    .title {
+        height: 150px;
+        width: 400px;
+        padding-top: 250px;
+        padding-left: 200px;
+        font-family: "Playfair Display", serif;
+
+    }
+
+    .title h1,
+    .title h2,
+    .title u {
+        font-family: "Edu QLD Hand", cursive;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+
+
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .intro img {
+        border-radius: 50%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+        margin-left: 30%;
+
+    }
+
+    .contact h4,
+    .contact h5 {
+        color: rgb(120, 120, 120);
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 70px;
+    }
+
+    .footer {
+        background-color: rgb(96, 96, 96);
+        margin-bottom: 0;
+        color: white;
+    }
+
+    .footer a {
+        color: white;
+    }
+.prj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+    .projects {
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+        width: 70%;
+    }
+   @media(max-width:1000px){
+    nav {
+        display: flex;
+    }
+    nav ul{
+        margin: 10px auto;
+    }
+    .mainpage{
+        background-position: center;
+    }
+    .title{
+        margin-top: 200px;
+    }
+    .projects{
+        flex-direction: column;
+    }
+   }
