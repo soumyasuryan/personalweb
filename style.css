@@ -110,3 +110,20 @@
         justify-content: space-around;
         width: 70%;
     }
+   @media(max-width:1000px){
+    nav {
+        display: flex;
+    }
+    nav ul{
+        margin: 10px auto;
+    }
+    .mainpage{
+        background-position: center;
+    }
+    .title{
+        margin-top: 200px;
+    }
+    .projects{
+        flex-direction: column;
+    }
+   }
