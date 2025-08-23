@@ -4,41 +4,82 @@
     }
 
     .mainpage {
-        background-image: url("im1.jpg");
+        background-image: url("./public/background.avif");
         background-size: cover;
         background-repeat: no-repeat;
         height: 950px;
         width: 100%;
+    }
+    
+     nav ul {
+    
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        padding-left: 25px;
+        margin-left: 30%;
+        background-color: black;
+
     }
 
     nav ul li {
         list-style: none;
         padding-right: 20px;
         color: white;
+        font-size: 20px;
 
     }
-
-    nav ul {
-        float: right;
-        display: flex;
-        justify-content: space-around;
-        background-color: rgb(96, 96, 96);
-        border-radius: 10px;
-        margin-top: 25px;
-        margin-right: 20px;
-        padding: 10px;
-        padding-left: 25px;
+    nav ul li a{
+        text-decoration: none;
+        color: white;
     }
-
+    nav ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
     .title {
         height: 150px;
-        width: 400px;
-        padding-top: 250px;
+        margin-top: 150px;
         padding-left: 200px;
         font-family: "Playfair Display", serif;
+        color: white;
 
     }
-
+    #title-quote{
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+    #title-quote h3{
+        width: 43%;
+        margin-left: 40%;
+    }
+    #title-btn{
+         padding: 12px 28px;
+  background: #00e0ff;
+  color: #000;
+  box-shadow: 0 0 15px #00e0ff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+        margin-left: 39%;
+        
+    }
+    #title-button a{
+        text-decoration: none;
+        color: black;
+    }
+    #title-btn:hover{
+        background: #00e0ff;
+  color: #000;
+  box-shadow: 0 0 15px #ffffff;
+    }
+    #title-button{
+        margin-top: 100px;
+    }
+    
     .title h1,
     .title h2,
     .title u {
@@ -46,19 +87,15 @@
     }
 
     .intro {
-        display: flex;
-        justify-content: center;
+        margin-left: 24%;
         padding: 100px;
-
-
     }
 
     .card {
-        width: 400px;
+        width: 600px;
     }
-
-    .intro img {
-        border-radius: 50%;
+    .card p{
+        font-size: 18px;
     }
 
     .skills {
@@ -72,8 +109,7 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        width: 50%;
-        margin-left: 30%;
+        margin-left: 20%;
 
     }
 
@@ -84,9 +120,8 @@
 
     .details {
         display: flex;
-        flex-direction: column;
-        align-items: start;
         margin-top: 70px;
+        gap: 270px;
     }
 
     .footer {
@@ -108,8 +143,19 @@
         display: flex;
         padding: 30px;
         justify-content: space-around;
-        width: 70%;
+        width: 90%;
     }
+    .card{
+        margin: 0 30px;
+    }
+    #me{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}   
+#my-card{
+    flex-direction: row;
+}
    @media(max-width:1000px){
     nav {
         display: flex;
@@ -143,4 +189,3 @@
     margin-left: 14%;
    }
    }
-   
