@@ -2,7 +2,12 @@
         font-family: "Playfair Display", serif;
 
     }
-
+    .website-logo{
+        margin-right: 24rem;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
     .mainpage {
         background-image: url("./public/background.avif");
         background-size: cover;
@@ -17,7 +22,7 @@
         justify-content: space-around;
         padding: 10px;
         padding-left: 25px;
-        margin-left: 30%;
+        /* margin-left: 30%; */
         background-color: black;
 
     }
@@ -36,6 +41,13 @@
     nav ul li:hover{
         text-decoration: underline;
         cursor: pointer;
+    }
+    .profile{
+        margin-left: 20%;
+    }
+    .profile p{
+        font-size: 12px;
+        margin-bottom: 0
     }
     
     .title {
@@ -87,8 +99,15 @@
     }
 
     .intro {
-        margin-left: 24%;
+        margin-left: 20rem;
+        width: 60%;
         padding: 100px;
+    }
+    #my-card{
+        display: flex;
+    }
+    #my-card img{
+        margin-right: 10px;
     }
 
     .card {
@@ -153,39 +172,88 @@
     border-radius: 50%;
     height: 50px;
 }   
-#my-card{
-    flex-direction: row;
-}
-   @media(max-width:1000px){
-    nav {
-        display: flex;
+
+@media(max-width:1200px){
+    .website-logo{
+        margin-right: 2rem;
+        height: 50px;
+        width: 50px;
     }
-    nav ul{
-        margin: 10px auto;
+    #intro{
+        margin-left: 0rem;
+        width: 90%;
     }
-    .mainpage{
-        background-position: center;
+    #title-quote h3{
+        margin-left: 0;
+        width: 60%;
     }
     .title{
-        margin-top: 200px;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #title-quote{
+        margin-left: 40px;
+    }
+    #title-btn{
+        margin-left: -10px;
+    }
+    
+    .details{
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0rem;
     }
     .projects{
         flex-direction: column;
-    }
-   }
-   @media(max-width:420px){
-    .mainpage{
-        width: 100%;
-        background-position-x: 62%;
-    }
-    .title{
-        padding-top: 400px;
-        padding-left: 20px;
-    }
-    .projects{
+        justify-content: center;
         align-items: center;
+        
     }
-   .contact{
-    margin-left: 14%;
-   }
-   }
+    .card{
+        margin-bottom: 3rem;
+        width: 200px;
+    }
+    .intro{
+        font-size: 10px;
+    }
+    .profile p{
+        font-size: 7px;
+    }
+    .profile{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+@media(max-width:500px){
+    .website-logo{
+        margin-right: 10px;
+    }
+    nav ul{
+        padding-left: 10px;
+    }
+    nav ul li{
+        font-size: 13px;
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .title h3{
+        font-size: 15px;
+    }
+    .profile p{
+        font-size: 4px;
+    }
+    .profile{
+        padding-right: 0;
+    }
+    .intro{
+        padding: 63px;
+    }
+}
