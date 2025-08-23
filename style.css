@@ -1,6 +1,10 @@
     * {
         font-family: "Playfair Display", serif;
+        color: white;
 
+    }
+    .mycontainer{
+        background-color: black;
     }
     .website-logo{
         margin-right: 20rem;
@@ -66,7 +70,7 @@
         width: 43%;
         margin-left: 40%;
     }
-    #title-btn{
+    .btn{
          padding: 12px 28px;
   background: #00e0ff;
   color: #000;
@@ -79,17 +83,20 @@
         margin-left: 39%;
         
     }
-    #title-button a{
+    .btn a{
         text-decoration: none;
         color: black;
     }
-    #title-btn:hover{
+    .btn:hover{
         background: #00e0ff;
   color: #000;
   box-shadow: 0 0 15px #ffffff;
     }
-    #title-button{
+    .btn{
         margin-top: 100px;
+    }
+    #example-btn{
+        margin-left:0rem;
     }
     
     .title h1,
@@ -160,9 +167,8 @@
 }
     .projects {
         display: flex;
-        padding: 30px;
         justify-content: space-around;
-        width: 90%;
+        width: 100%;
     }
     .card{
         margin: 0 30px;
@@ -172,7 +178,9 @@
     border-radius: 50%;
     height: 50px;
 }   
-
+#examplecard{
+    width: 30rem;
+}
 @media(max-width:1200px){
     .website-logo{
         margin-right: 2rem;
@@ -201,7 +209,7 @@
     #title-quote{
         margin-left: 40px;
     }
-    #title-btn{
+    .btn{
         margin-left: -10px;
     }
     
@@ -229,6 +237,15 @@
     .profile{
         margin-left: 10px;
         margin-top: 10px;
+    }
+    .projects{
+        width: 90%;
+    }
+    .card{
+        width: 16rem;
+    }
+    #examplecard{
+        width: 20rem;
     }
 }
 @media(max-width:500px){

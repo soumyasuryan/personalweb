@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="mycontainer">
     <div class="mainpage" id="mainpage">
 
         <nav>
@@ -38,7 +38,7 @@
             <h3>I believe great products are built at the intersection of creativity, clean code, and user-centric design.</h3>
         </div>
          <div class="title" id="title-button">
-            <a href="#projects" id="title-btn">View my work</a>
+            <a href="#projects" class="btn">View my work</a>
         </div>
         </div>
 
@@ -116,8 +116,8 @@
     <hr>
     <div class="prj"id="projects">
         <h1>Few Example websites</h1>
-        <div class="projects" >
-            <div class="card" style="width: 18rem;">
+        <div class="projects" style="padding: 0;" >
+            <div class="card" id="examplecard" style="background-color: black;border: 1px solid;">
                 <img src="public/WhatsApp Image 2025-06-09 at 08.47.47_57a57b93.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Netflix clone</h5>
@@ -126,7 +126,7 @@
                 </div>
             </div>
             
-            <div class="card" style="width: 18rem;">
+            <div class="card" id="examplecard" style="background-color: black;border: 1px solid;">
                 <img src="public/weather.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Weather App</h5>
@@ -134,7 +134,7 @@
                     
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" id="examplecard" style="background-color: black;border: 1px solid;">
                 <img src="public/robustFoods.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">RobustFoods</h5>
@@ -142,7 +142,7 @@
                     
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" id="examplecard" style="background-color: black;border: 1px solid;">
                 <img src="public/blog.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Blog Post</h5>
@@ -150,7 +150,7 @@
                     
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" id="examplecard" style="background-color: black;border: 1px solid;">
                 <img src="public/twitter.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Twitter clone</h5>
@@ -160,7 +160,7 @@
             </div>
             
         </div>
-        <h5>And alot more...</h5>
+        <a href="https://github.com/soumyasuryan?tab=repositories" target="_blank" class="btn" id="example-btn">View complete code on GitHub</a>
     </div>
     <hr>
     <div class="contact" id="contact">
@@ -190,6 +190,7 @@
             </footer>
         </div>
     </footer>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
